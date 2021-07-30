@@ -23,7 +23,7 @@ namespace GGST_Color_Unlocker
         [DllImport("kernel32.dll", SetLastError = true)]
         static extern bool WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, uint nSize, out int lpNumberOfBytesWritten);
 
-        const string procName = "GGST-Win64-Shipping";
+        private const string procName = "GGST-Win64-Ship";
 
         const string colorPSNPattern = "74 08 48 8B CF E8 72 E9 21 00 0F B6 C3";
         const string colorSPPattern1 = "E8 AA 73 F8 FF 48 63 8F 28 04 00 00 0F BE 44 08 03";
